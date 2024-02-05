@@ -3,11 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Jon Barron</title>
+    <title>Zibo Zhao</title>
 
     <meta name="author" content="Zibo Zhao">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/teaser.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/profile/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -22,16 +22,18 @@
                 <p class="name" style="text-align: center;">
                   Zibo Zhao
                 </p>
-                <p>I'm a fifth-year Ph.D student at SVIP Lab in ShanghaiTech, advised by Prof. <a href="https://scholar.google.com.sg/citations?user=fe-1v0MAAAAJ&hl=en">Shenghua Gao</a></p>
+                <p>I am a fifth-year Ph.D student from <a href="https://svip-lab.github.io/index.html"> SVIP Lab </a> at ShanghaiTech University, 
+                   advised by Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>.
+                   I received my bachelor's degree from ShanghaiTech University as well.
+                   Currently, I am a research intern at Tencent, working with Dr. <a href="https://www.skicyyu.org/"> Gang YU </a>. </p>
                 <p style="text-align:center">
                   <a href="https://github.com/Maikouuu">Github</a>  &nbsp;/&nbsp;
                   <a href="mailto:zhaozb@shanghaitech.edu.cn">Email</a> &nbsp;/&nbsp;
                   <a href="https://github.com/Maikouuu">CV</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/Maikouuu">Scholar</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/zibo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/zibo.jpg" class="hoverZoomLink"></a>
+                <a href="images/profile/zibo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile/zibo.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -41,210 +43,390 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in 3D generation and reconstruction.
+                  I focus on 3D generation and reconstruction.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="pag_stop()" onmouseover="pag_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pag_image'><video  width=100% muted autoplay loop>
+                  <source src="images/pag/pag.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/pag/pag.png' width="100%">
+                </div>
+                <script type="text/javascript">
+                  function pag_start() {
+                    document.getElementById('pag_image').style.opacity = "1";
+                  }
+        
+                  function pag_stop() {
+                    document.getElementById('pag_image').style.opacity = "0";
+                  }
+                  pag_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="data/pag/pag.pdf">
+              <span class="papertitle"> Point As Gaussian: Forward Point Cloud Rendering
+              </span>
+                </a>
+                <br>
+                <strong>Zibo Zhao</strong>,
+                <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+                <a href="https://chenxin.tech/"> Xin Chen </a>,
+                <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
+                <a href="https://www.skicyyu.org/"> Gang Yu </a>,
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+                <br>
+                <em>prePrint</em>, 2024
+                <br>
+                <a href="data/pag/pag.pdf"> paper </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
 
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+    <tr onmouseout="tsp_stop()" onmouseover="tsp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/smerf.jpg' width=100%>
+          <div class="two" id='tsp'>
+            <img src='images/tsp/tsppipeline.png' width="160"></div>
+          <img src='images/tsp/tspteaser.png' width="160">
         </div>
         <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
+          function tsp_start() {
+            document.getElementById('tsp').style.opacity = "1";
           }
 
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
+          function tsp_stop() {
+            document.getElementById('tsp').style.opacity = "0";
           }
-          smerf_stop()
+          tsp_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://smerf-3d.github.io/">
-          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+        <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Wang_TSP-Transformer_Task-Specific_Prompts_Boosted_Transformer_for_Holistic_Scene_Understanding_WACV_2024_paper.pdf">
+          <span class="papertitle">TSP-Transformer: Task-Specific Prompts Boosted Transformer for Holistic Scene Understanding</span>
         </a>
         <br>
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-		<a href="https://phogzone.com/">Peter Hedman*</a>,
-		<a href="https://creiser.github.io/">Christian Reiser</a>,
-		<a href="">Peter Zhizhin</a>,
-		<a href="">Jean-François Thibert</a>,
-        <a href="https://lucic.ai/">Mario Lučić</a>,
-        <a href="https://szeliski.org/">Richard Szeliski</a>,
-		<strong>Jonathan T. Barron</strong>
+        <a href="https://github.com/tb2-sy">Shuo Wang</a>,
+        <a href="https://lijing1996.github.io">Jing Li</a>,
+        <strong>Zibo Zhao</strong>
+        <a href="https://dongzelian.com">Dongze Lian</a>,
+        <a href="https://github.com/hbb1">Binbin Huang</a>,
+        <a href="">Xiaomei Wang</a>,
+        <a href="">Zhengxin Li</a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>WACV</em>, 2024
         <br>
-        <a href="https://smerf-3d.github.io/">project page</a>
+        <a href="https://arxiv.org/abs/2311.03427">arXiv</a>
         /
-        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
+        <a href="https://github.com/tb2-sy/TSP-Transformer">code</a>
         /
-        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+        <a href="data/tsp.bib.md">bibtex</a>
         <p></p>
         <p>
-        Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
+           
         </p>
       </td>
     </tr>
 	
 
-    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+    <tr onmouseout="roomdesigner_stop()" onmouseover="roomdesigner_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-          <source src="images/nuvo.mp4" type="video/mp4">
+          <div class="two" id='roomdesigner_image'><video  width=100% muted autoplay loop>
+          <source src="images/roomdesigner/roomdesigner.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/nuvo.jpg' width=100%>
+          <img src='images/roomdesigner/roomdesigner.png' width=100%>
         </div>
         <script type="text/javascript">
-          function nuvo_start() {
-            document.getElementById('nuvo_image').style.opacity = "1";
+          function roomdesigner_start() {
+            document.getElementById('roomdesigner_image').style.opacity = "1";
           }
 
-          function nuvo_stop() {
-            document.getElementById('nuvo_image').style.opacity = "0";
+          function roomdesigner_stop() {
+            document.getElementById('roomdesigner_image').style.opacity = "0";
           }
-          nuvo_stop()
+          roomdesigner_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://pratulsrinivasan.github.io/nuvo/">
-          <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+        <a href="https://arxiv.org/abs/2310.10027">
+          <span class="papertitle">RoomDesigner: Encoding Anchor-latents for Style-consistent and Shape-compatible Indoor Scene Generation</span>
         </a>
         <br>
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <a href="https://github.com/zhao-yiqun">Yiqun Zhao</a>,
+        <strong>Zibo Zhao</strong>
+        <a href="https://lijing1996.github.io">Jing Li</a>,
+        <a href="https://github.com/Ironieser">Sixun Dong</a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>3DV</em>, 2024
         <br>
-        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        <a href="https://github.com/zhao-yiqun/RoomDesigner">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        <a href="https://arxiv.org/abs/2310.10027">arXiv</a>
         /
-        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <a href="data/roomdesigner.bib.md">bibtex</a>
         <p></p>
         <p>
-        Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+         
         </p>
       </td>
     </tr>
 	
-	
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+    <tr onmouseout="paint_stop()" onmouseover="paint_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/recon.mp4" type="video/mp4">
+          <div class="two" id='paint_image'><video  width=100% muted autoplay loop>
+          <source src="images/paint/paint.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/recon.png' width="160">
+          <img src='images/paint/paint.png' width="100%">
         </div>
         <script type="text/javascript">
-          function recon_start() {
-            document.getElementById('recon_image').style.opacity = "1";
+          function paint_start() {
+            document.getElementById('paint_image').style.opacity = "1";
           }
 
-          function recon_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
+          function paint_stop() {
+            document.getElementById('paint_image').style.opacity = "0";
           }
-          recon_stop()
+          paint_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://reconfusion.github.io/">
-			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+        <a href="https://arxiv.org/abs/2312.13913">
+      <span class="papertitle"> Paint3D: Paint Anything 3D with Lighting-Less Texture Diffusion Models
+      </span>
         </a>
         <br>
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
-		<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
+        <a href="https://chenxin.tech/"> Xin Chen </a>,
+        <a href="https://qzq2514.github.io"> Zhongqi Qi </a>,
+        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+        <strong>Zibo Zhao</strong>,
+        <a href=""> Zhibin Wang </a>,
+        <a href=""> Bin Fu </a>,
+        <a href="https://april.zju.edu.cn/team/dr-yong-liu/"> Yong Liu </a>
+        <a href="https://www.skicyyu.org/"> Gang Yu </a>,
         <br>
-        <em>arXiv</em>, 2023
+        <em>prePrint</em>, 2023
         <br>
-        <a href="https://reconfusion.github.io/">project page</a>
+        <a href="https://paint3d.github.io">project page</a>
         /
-        <a href="https://arxiv.org/abs/">arXiv</a>
+        <a href="https://arxiv.org/abs/2312.13913">arXiv</a>
+        /
+        <a href="data/paint.bib.md"> bibtex </a>
         <p></p>
         <p>
-        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+         
+        </p>
+      </td>
+    </tr>
+	
+    <tr onmouseout="shapegpt_stop()" onmouseover="shapegpt_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='shapegpt_image'>
+            <img src='images/shapegpt/shapegptnetwork.png' width="160"></div>
+          <img src='images/shapegpt/shapegptteaser.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function shapegpt_start() {
+            document.getElementById('shapegpt_image').style.opacity = "1";
+          }
+
+          function shapegpt_stop() {
+            document.getElementById('shapegpt_image').style.opacity = "0";
+          }
+          shapegpt_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2311.17618">
+      <span class="papertitle"> ShapeGPT: 3D Shape Generation with A Unified Multi-modal Language Model
+      </span>
+        </a>
+        <br>
+        <a href="https://fukunyin.github.io"> Fukun Yin </a>,
+        <a href="https://chenxin.tech/"> Xin Chen </a>,
+        <a href="https://icoz69.github.io"> Chi Zhang </a>,
+        <a href="https://www.biaojiang.tech"> Biao Jiang </a>,
+        <strong>Zibo Zhao</strong>,
+        <a href="https://scholar.google.com.hk/citations?user=gsLd2ccAAAAJ&hl=zh-CN"> Jiayuan Fan </a>,
+        <a href="https://www.skicyyu.org/"> Gang Yu </a>,
+        <a href=""> Taihao Li </a>,
+        <a href="https://eetchen.github.io/"> Tao Chen </a>
+        <br>
+        <em>prePrint</em>, 2023
+        <br>
+        <a href="https://github.com/OpenShapeLab/ShapeGPT">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2311.17618">arXiv</a>
+        /
+        <a href="data/shapegpt.bib.md"> bibtex </a>
+        <p></p>
+        <p>
+         
         </p>
       </td>
     </tr>
 
+    <tr onmouseout="michelangelo_stop()" onmouseover="michelangelo_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='michelangelo_image'><video  width=100% muted autoplay loop>
+          <source src="images/michelangelo/michelangelo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/michelangelo/michelangelo.png' width="100%">
+        </div>
+        <script type="text/javascript">
+          function michelangelo_start() {
+            document.getElementById('michelangelo_image').style.opacity = "1";
+          }
 
-<tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-    <div class="two" id='difsurvey_image'><video  width=100% height=100% muted autoplay loop>
-    <source src="images/difsurvey_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video></div>
-      <img src='images/difsurvey_image.jpg' width="160">
-    </div>
-    <script type="text/javascript">
-      function difsurvey_start() {
-        document.getElementById('difsurvey_image').style.opacity = "1";
-      }
+          function michelangelo_stop() {
+            document.getElementById('michelangelo_image').style.opacity = "0";
+          }
+          michelangelo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://openreview.net/pdf?id=xmxgMij3LY">
+			<span class="papertitle">Michelangelo: Conditional 3D Shape Generation based on Shape-Image-Text Aligned Latent Representation</span>
+        </a>
+        <br>
+        <strong>Zibo Zhao</strong>,
+        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+        <a href="https://chenxin.tech/"> Xin Chen </a>,
+        <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
+        <a href="https://wrong.wang/"> Rui Wang </a>,
+        <a href=""> Per Cheng </a>,
+        <a href=""> Bin Fu </a>,
+        <a href="https://eetchen.github.io/"> Tao Chen </a>,
+        <a href="https://www.skicyyu.org/"> Gang Yu </a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+        <br>
+        <em>NeurIPS</em>, 2023
+        <br>
+        <a href="https://huggingface.co/spaces/Maikou/Michelangelo"> Hugging Face </a>
+        /
+        <a href="https://neuralcarver.github.io/michelangelo/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2306.17115">arXiv</a>
+        /
+        <a href="https://github.com/NeuralCarver/Michelangelo"> code </a>
+        /
+        <a href="data/michelangelo.bib.md"> bibtex </a>
+        <p></p>
+        <p>
+         
+        </p>
+      </td>
+    </tr>
 
-      function difsurvey_stop() {
-        document.getElementById('difsurvey_image').style.opacity = "0";
-      }
-      difsurvey_stop()
-    </script>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://arxiv.org/abs/2310.07204">
-      <span class="papertitle">State of the Art on Diffusion Models for Visual Computing
-</span>
-    </a>
-    <br>
-	<a href="https://ryanpo.com/">Ryan Po</a>,
-	<a href="https://yifita.netlify.app/">Wang Yifan</a>,
-	<a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>,
-	<a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
-	<strong>Jonathan T. Barron</strong>,
-	<a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
-	<a href="https://ericryanchan.github.io/">Eric Ryan Chan</a>,
-	<a href="https://www.weizmann.ac.il/math/dekel/home">Tali Dekel</a>,
-	<a href="https://holynski.org/">Aleksander Holynski</a>,
-	<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
-	<a href="https://tml.stanford.edu/">C. Karen Liu</a>,
-	<a href="https://lingjie0206.github.io/">Lingjie Liu</a>,
-	<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-    <a href="https://www.niessnerlab.org/">Matthias Nießner</a>,
-	<a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>,
-	<a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt</a>,
-	<a href="https://peterwonka.net/">Peter Wonka</a>,
-    <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
-    <br>
-	<em>arXiv<em>, 2023
-    <br>
-    <p></p>
-    <p>
-    A survey of recent progress in diffusion models for images, videos, and 3D.
+    <tr onmouseout="magictailor_stop()" onmouseover="magictailor_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='magictailor_image'>
+            <img src='images/magictailor/magictailornetwork.png' width="160"></div>
+          <img src='images/magictailor/magictailorteaser.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function magictailor_start() {
+            document.getElementById('magictailor_image').style.opacity = "1";
+          }
+
+          function magictailor_stop() {
+            document.getElementById('magictailor_image').style.opacity = "0";
+          }
+          magictailor_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="data/magictarlor/magictailor.pdf">
+      <span class="papertitle"> Magic Tailor: a Latent-Anchor based Diffusion Model for 3D Clothes Generation
+      </span>
+        </a>
+        <br>
+        <strong>Zibo Zhao</strong>,
+        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+        <a href="https://chenxin.tech/"> Xin Chen </a>,
+        <a href="https://www.skicyyu.org/"> Gang Yu </a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+        <br>
+        <em>prePrint</em>, 2023
+        <br>
+        <a href="data/magictarlor/magictailor.pdf">paper</a>
+        /
+        <p></p>
+        <p>
+         
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="pbhc_stop()" onmouseover="pbhc_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='pbhc_image'>
+            <img src='images/pbhc/pbhcnetwork.png' width="160"></div>
+          <img src='images/pbhc/pbhcteaser.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function pbhc_start() {
+            document.getElementById('pbhc_image').style.opacity = "1";
+          }
+
+          function pbhc_stop() {
+            document.getElementById('pbhc_image').style.opacity = "0";
+          }
+          pbhc_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhao_Prior_Based_Human_Completion_CVPR_2021_paper.pdf">
+      <span class="papertitle"> Prior Based Humam Completion
+      </span>
+        </a>
+        <br>
+        <strong>Zibo Zhao</strong>,
+        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+        <a href="https://scholar.google.com/citations?user=Y3hU1AYAAAAJ&hl=en"> Yanyu Xu </a>,
+        <a href="https://www.linkedin.com/in/xianing-chen-0b2695183"> Xianing Chen </a>,
+        <a href="https://zachluo.github.io/"> Weixin Luo </a>,
+        <a href="https://github.com/rxqy"> Lei Jin </a>,
+        <a href=""> Bohui Zhu </a>,
+        <a href=""> Tong Liu </a>,
+        <a href=""> Binqiang Zhao </a>,
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+        <br>
+        <em>CVPR</em>, 2021
+        <br>
+        <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhao_Prior_Based_Human_Completion_CVPR_2021_paper.pdf">paper</a>
+        /
+        <a href="https://github.com/Maikouuu/PBHC"> code </a>
+        /
+        <a href="data/pbhc.bib.md"> bibtex </a>
+        <p></p>
+        <p>
+         
+        </p>
+      </td>
+    </tr>
+     
     </p>
   </td>
 </tr>          
@@ -258,14 +440,16 @@
             <tr>
               <td style="padding:0px">
                 <br>
-                <p style="text-align:right;font-size:small;">
-                  Thanks for <a href="https://jonbarron.info">Jon Barron</a> for his share.
+                <p style="text-align:center;font-size:small;">
+                  Thanks to <a href="https://jonbarron.info">Jon Barron</a> for his share.
                 </p>
               </td>
             </tr>
           </tbody></table>
         </td>
       </tr>
+
+      
     </table>
   </body>
 </html>

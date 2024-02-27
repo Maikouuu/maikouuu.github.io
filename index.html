@@ -50,6 +50,56 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="paint_stop()" onmouseover="paint_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='paint_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/paint/paint.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/paint/paint.png' width="100%" style="margin-top: 26%;">
+        </div>
+        <script type="text/javascript">
+          function paint_start() {
+            document.getElementById('paint_image').style.opacity = "1";
+          }
+
+          function paint_stop() {
+            document.getElementById('paint_image').style.opacity = "0";
+          }
+          paint_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2312.13913">
+      <span class="papertitle"> Paint3D: Paint Anything 3D with Lighting-Less Texture Diffusion Models
+      </span>
+        </a>
+        <br>
+        <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
+        <a href="https://chenxin.tech/"> Xin Chen </a>,
+        <a href="https://qzq2514.github.io"> Zhongqi Qi </a>,
+        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+        <strong>Zibo Zhao</strong>,
+        <a href=""> Zhibin Wang </a>,
+        <a href=""> Bin Fu </a>,
+        <a href="https://april.zju.edu.cn/team/dr-yong-liu/"> Yong Liu </a>
+        <a href="https://www.skicyyu.org/"> Gang Yu </a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://paint3d.github.io">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2312.13913">arXiv</a>
+        /
+        <a href="data/paint.bib.md"> bibtex </a>
+        <p></p>
+        <p>
+         
+        </p>
+      </td>
+    </tr>
+
             <tr onmouseout="pag_stop()" onmouseover="pag_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -178,56 +228,6 @@
         <a href="https://arxiv.org/abs/2310.10027">arXiv</a>
         /
         <a href="data/roomdesigner.bib.md">bibtex</a>
-      </td>
-    </tr>
-	
-    <tr onmouseout="paint_stop()" onmouseover="paint_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='paint_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/paint/paint.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/paint/paint.png' width="100%" style="margin-top: 26%;">
-        </div>
-        <script type="text/javascript">
-          function paint_start() {
-            document.getElementById('paint_image').style.opacity = "1";
-          }
-
-          function paint_stop() {
-            document.getElementById('paint_image').style.opacity = "0";
-          }
-          paint_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2312.13913">
-      <span class="papertitle"> Paint3D: Paint Anything 3D with Lighting-Less Texture Diffusion Models
-      </span>
-        </a>
-        <br>
-        <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
-        <a href="https://chenxin.tech/"> Xin Chen </a>,
-        <a href="https://qzq2514.github.io"> Zhongqi Qi </a>,
-        <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
-        <strong>Zibo Zhao</strong>,
-        <a href=""> Zhibin Wang </a>,
-        <a href=""> Bin Fu </a>,
-        <a href="https://april.zju.edu.cn/team/dr-yong-liu/"> Yong Liu </a>
-        <a href="https://www.skicyyu.org/"> Gang Yu </a>
-        <br>
-        <em>prePrint</em>, 2023
-        <br>
-        <a href="https://paint3d.github.io">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2312.13913">arXiv</a>
-        /
-        <a href="data/paint.bib.md"> bibtex </a>
-        <p></p>
-        <p>
-         
-        </p>
       </td>
     </tr>
 	

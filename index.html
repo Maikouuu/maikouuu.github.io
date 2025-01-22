@@ -22,10 +22,14 @@
                 <p class="name" style="text-align: center;">
                   Zibo Zhao
                 </p>
-                <p>I am a fifth-year Ph.D student from <a href="https://svip-lab.github.io/index.html"> SVIP Lab </a> at ShanghaiTech University, 
+                <p>I am a last-year Ph.D student from <a href="https://svip-lab.github.io/index.html"> SVIP Lab </a> at ShanghaiTech University, 
                    advised by Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>.
                    I received my bachelor's degree from ShanghaiTech University as well.
-                   Currently, I am a research intern at Tencent, working with Dr. <a href="https://www.skicyyu.org/"> Gang YU </a>. </p>
+                   Currently, I am a research intern at Tencent. 
+                   Previously, I worked with 
+                   Dr. <a href="https://github.com/StevenLiuWen"> Wen Liu </a>, 
+                   <a href="https://chenxin.tech/"> Xin Chen </a>, and 
+                   Dr. <a href="https://www.skicyyu.org/"> Gang YU </a>. </p>
                 <p style="text-align:center">
                   <a href="https://github.com/Maikouuu">Github</a>  &nbsp;/&nbsp;
                   <a href="mailto:zhaozb@shanghaitech.edu.cn">Email</a> &nbsp;/&nbsp;
@@ -43,14 +47,251 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I focus on 3D generation and reconstruction.
+                  I focus on 3D generation and representation.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="paint_stop()" onmouseover="paint_start()">
+            <tr onmouseout="hy3d2_stop()" onmouseover="hy3d2_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='hy3d2_image'>
+                    <img src='images/hy3d2/system.png' width="100%" style="margin-top: 15%;"></div>
+                  <img src='images/hy3d2/teaser.jpg' width="100%" style="margin-top: 15%;">
+                </div>
+                <script type="text/javascript">
+                  function hy3d2_start() {
+                    document.getElementById('hy3d2_image').style.opacity = "1";
+                  }
+        
+                  function hy3d2_stop() {
+                    document.getElementById('hy3d2_image').style.opacity = "0";
+                  }
+                  hy3d2_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2501.12202">
+              <span class="papertitle"> Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation
+              </span>
+                </a>
+                <br>
+                <strong>Zibo Zhao</strong> is one of the contributors.
+                <br>
+                <em>prePrint</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2501.12202">arxiv</a>
+                /
+                <a href="https://github.com/Tencent/Hunyuan3D-2">code</a>
+                /
+                <a href="data/hy3d2.bib.md"> bibtex </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="bpt_stop()" onmouseover="bpt_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='bpt_image'>
+                    <img src='images/bpt/method.png' width="100%" style="margin-top: 15%;"></div>
+                  <img src='images/bpt/teaser.png' width="100%" style="margin-top: 15%;">
+                </div>
+                <script type="text/javascript">
+                  function bpt_start() {
+                    document.getElementById('bpt_image').style.opacity = "1";
+                  }
+        
+                  function bpt_stop() {
+                    document.getElementById('bpt_image').style.opacity = "0";
+                  }
+                  bpt_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2411.07025">
+              <span class="papertitle"> Scaling Mesh Generation via Compressive Tokenization
+              </span>
+                </a>
+                <br>
+                <a href="https://davidxu-jj.github.io/"> Haohan Weng </a>,
+                <strong>Zibo Zhao</strong>,
+                <a href="https://scholar.google.com/citations?user=5d5Y9BoAAAAJ&hl=zh-CN"> Biwen Lei </a>,
+                <a href="https://scholar.google.com.hk/citations?user=e9EzzWAAAAAJ&hl=zh-CN"> Xianghui Yang </a>,
+                <a href="https://hitcslj.github.io/"> Jian Liu </a>,
+                <a href="https://zeqiang-lai.github.io/">Zeqiang Lai</a>,
+                <a href="https://openreview.net/profile?id=~Zhuo_Chen5">Zhuo Chen</a>,
+                <a href=""> Yuhong Liu </a>,
+                <a href=""> Jie Jiang </a>,
+                <a href=""> Chunchao Guo </a>,
+                <a href="https://scholar.google.com/citations?user=-neWbpUAAAAJ&hl=zh-CN">Tong Zhang</a>
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+                <a href="https://scholar.google.com/citations?user=Q5248zwAAAAJ&hl=zh-CN"> C. L. Philip Chen </a>
+                <br>
+                <em>prePrint</em>, 2025
+                <br>
+                <a href="https://whaohan.github.io/bpt/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2411.07025">arxiv</a>
+                /
+                <a href="https://github.com/whaohan/bpt?tab=readme-ov-file">code</a>
+                /
+                <a href="data/bpt.bib.md"> bibtex </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="cad_stop()" onmouseover="cad_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cad_image'>
+                    <img src='images/cad-mllm/method.png' width="100%" style="margin-top: 15%;"></div>
+                  <img src='images/cad-mllm/teaser.png' width="100%" style="margin-top: 15%;">
+                </div>
+                <script type="text/javascript">
+                  function cad_start() {
+                    document.getElementById('cad_image').style.opacity = "1";
+                  }
+        
+                  function cad_stop() {
+                    document.getElementById('cad_image').style.opacity = "0";
+                  }
+                  cad_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2411.04954">
+              <span class="papertitle"> CAD-MLLM: Unifying Multimodality-Conditioned CAD Generation With MLLM
+              </span>
+                </a>
+                <br>
+                <a href="https://davidxu-jj.github.io/"> Jingwei Xu </a>,
+                <a href="https://scholar.google.com/citations?user=ZkCLeicAAAAJ&hl=en"> Chenyu Wang </a>,
+                <strong>Zibo Zhao</strong>,
+                <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
+                <a href="https://scholar.google.com/citations?user=XqLiBQMAAAAJ&hl=en">Yi Ma</a>,
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+                <br>
+                <em>prePrint</em>, 2025
+                <br>
+                <a href="https://cad-mllm.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2411.04954">arxiv</a>
+                /
+                <a href="data/cadmllm.bib.md"> bibtex </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="flexitex_stop()" onmouseover="flexitex_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='flexitex_image'>
+                    <img src='images/fexitex/method.png' width="100%" style="margin-top: 15%;"></div>
+                  <img src='images/fexitex/teaser.png' width="100%" style="margin-top: 15%;">
+                </div>
+                <script type="text/javascript">
+                  function flexitex_start() {
+                    document.getElementById('flexitex_image').style.opacity = "1";
+                  }
+        
+                  function flexitex_stop() {
+                    document.getElementById('flexitex_image').style.opacity = "0";
+                  }
+                  flexitex_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2409.12431">
+              <span class="papertitle"> FlexiTex: Enhancing Texture Generation via Visual Guidance
+              </span>
+                </a>
+                <br>
+                <a href="https://patrickddj.github.io/Home/"> Dadong Jiang </a>,
+                <a href="https://scholar.google.com.hk/citations?user=e9EzzWAAAAAJ&hl=zh-CN"> Xianghui Yang </a>,
+                <strong>Zibo Zhao</strong>,
+                <a href=""> Sheng Zhang </a>,
+                <a href=""> Jiaao Yu </a>,
+                <a href="https://zeqiang-lai.github.io/">Zeqiang Lai</a>,
+                <a href=""> Shaoxiong Yang </a>,
+                <a href=""> Chunchao Guo </a>,
+                <a href="https://scholar.google.com/citations?user=oA7bk2AAAAAJ&hl=zh-CN">Xiaobo Zhou</a>,
+                <a href="https://ieeexplore.ieee.org/author/37089680837">Zhihui Ke</a>
+                <br>
+                <em>AAAI</em>, 2025
+                <br>
+                <a href="https://patrickddj.github.io/FlexiTex/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2409.12431">arxiv</a>
+                /
+                <a href="data/flexitex.bib.md"> bibtex </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
+            
+            <tr onmouseout="hm_stop()" onmouseover="hm_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='hm_image'>
+                    <img src='images/hm/method.png' width="100%" style="margin-top: 15%;"></div>
+                  <img src='images/hm/teaser.png' width="100%" style="margin-top: 15%;">
+                </div>
+                <script type="text/javascript">
+                  function hm_start() {
+                    document.getElementById('hm_image').style.opacity = "1";
+                  }
+        
+                  function hm_stop() {
+                    document.getElementById('hm_image').style.opacity = "0";
+                  }
+                  hm_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/LiuShiyu95/HeroMaker/blob/main/assets/paper.pdf">
+              <span class="papertitle"> HeroMaker: Human-centric Video Editing with Motion Priors
+              </span>
+                </a>
+                <br>
+                <a href="https://github.com/LiuShiyu95"> Shiyu Liu </a>,
+                <strong>Zibo Zhao</strong>,
+                <a href="https://scholar.google.com/citations?user=-LATi7MAAAAJ&hl=zh-CN"> Yihao Zhi </a>,
+                <a href="https://github.com/zhao-yiqun">Yiqun Zhao</a>,
+                <a href="https://github.com/hbb1"> Binbin Huang </a>
+                <a href="https://github.com/tb2-sy">Shuo Wang</a>,
+                <a href="https://scholar.google.com/citations?user=V5H0P28AAAAJ">Ruoyu Wang</a>,
+                <a href=""> Michael Xuan </a>,
+                <a href="https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en">Zhengxin Li</a>,
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
+                <br>
+                <em>ACM MM</em>, 2025
+                <br>
+                <a href="https://github.com/LiuShiyu95/HeroMaker/blob/main/assets/paper.pdf">paper</a>
+                /
+                <a href="https://github.com/LiuShiyu95/HeroMaker?tab=readme-ov-file">code</a>
+                /
+                <a href="data/hm.bib.md"> bibtex </a>
+                <p></p>
+                <p>
+                 
+                </p>
+              </td>
+            </tr>
+
+    <tr onmouseout="paint_stop()" onmouseover="paint_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='paint_image'><video  width=100% height=100% muted autoplay loop>
@@ -100,7 +341,7 @@
       </td>
     </tr>
 
-            <tr onmouseout="pag_stop()" onmouseover="pag_start()" bgcolor="#ffffd0">
+            <tr onmouseout="pag_stop()" onmouseover="pag_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='pag_image'><video  width=100% height=100% muted autoplay loop>
@@ -130,6 +371,7 @@
                 <a href="https://github.com/StevenLiuWen"> Wen Liu </a>,
                 <a href="https://chenxin.tech/"> Xin Chen </a>,
                 <a href="https://github.com/Zzlongjuanfeng"> Xianfang Zeng </a>,
+                <a href="https://github.com/LiuShiyu95"> Shiyu Liu </a>,
                 <a href="https://www.skicyyu.org/"> Gang Yu </a>,
                 <a href="https://scholar.google.com/citations?hl=zh-CN&user=fe-1v0MAAAAJ">Shenghua Gao</a>
                 <br>
